@@ -1,0 +1,462 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Raleway", sans-serif;
+  color: #2b1e4d;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e2e2e2;
+}
+
+#fullPageWrapper {
+  width: 100%;
+}
+
+#sidebar {
+  position: fixed;
+  z-index: 999;
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 4px solid #c1666b;
+}
+
+.sidebar-shown {
+  max-height: 150px;
+  transition: 1s;
+}
+
+.sidebar-hidden {
+  max-height: 70px;
+  transition: 1s;
+}
+
+#sidebar,
+#sidebar ul li > a,
+#sidebar ul {
+  list-style: none;
+  text-decoration: none;
+  background-color: #2b1e4d;
+  color: #c596e2;
+}
+
+#hamburgerMenu {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 5px 10px 0;
+  font-size: 30px;
+  z-index: 999;
+  align-items: center;
+}
+
+.fa-bars {
+  cursor: pointer;
+}
+
+#sidebarLogo {
+  width: 80px;
+  height: 50px;
+  z-index: 999;
+}
+
+#navLinks {
+  margin: 15px auto 0;
+  width: 80%;
+  padding-bottom: 10px;
+  font-size: 20px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#navLinks li > a:hover,
+.fa:hover {
+  color: #c1666b;
+}
+
+#heroArea {
+  background: url("../img/heroImage.jpg") no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#heroArea h1 {
+  font-size: 40px;
+  margin: 0;
+  padding: 10px;
+}
+
+#heroText {
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px #2b1e4d;
+}
+
+#aboutMeWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+#aboutImgWrapper {
+  height: 250px;
+}
+
+#aboutMeImg {
+  position: relative;
+  left: 5px;
+  z-index: 998;
+  height: 280px;
+  width: 160px;
+  border: 5px solid #e2e2e2;
+}
+
+#aboutMeImgBorder {
+  position: relative;
+  z-index: 997;
+  top: -240px;
+  left: 10px;
+  height: 250px;
+  border: 5px solid #2b1e4d;
+}
+
+#aboutMeContent {
+  padding: 1rem;
+  margin-left: 10px;
+}
+
+#aboutMeContent h1,
+#cardWrapper h1,
+#testimonialHeading h1 {
+  font-size: 40px;
+  text-shadow: 2px 2px #e2e2e2;
+  text-decoration: underline solid#2b1e4d;
+}
+
+#quoteBanner {
+  background-color: #2b1e4d;
+  color: #e2e2e2;
+  text-align: center;
+  padding: 20px;
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+#cardWrapper {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#cardTitle,
+#testimonialHeading {
+  text-align: center;
+  background-color: #c1666b;
+  letter-spacing: 2px;
+}
+
+.card {
+  text-align: center;
+  width: 90%;
+  height: 500px;
+  background-color: whitesmoke;
+  border: 5px solid #c1666b;
+  margin: 20px;
+}
+
+.card img {
+  height: 250px;
+  width: 100%;
+}
+
+#cardTitle {
+  font-size: 40px;
+  text-shadow: 2px 2px #e2e2e2;
+  text-align: center;
+  padding: 50px;
+  text-decoration: underline #2b1e4d;
+}
+
+.card p {
+  padding: 10px;
+}
+
+#testimonialHeading {
+  text-align: center;
+  padding: 10px;
+}
+
+.testimonialCard {
+  display: flex;
+  padding: 1rem;
+  height: auto;
+  border: 2px solid #c1666b;
+  background-color: whitesmoke;
+  margin: 20px 35px;
+  align-items: center;
+}
+
+.testimonialCard img {
+  align-self: flex-start;
+  margin-top: 25px;
+  width: 75px;
+  height: 75px;
+}
+
+.container {
+  padding-left: 1rem;
+}
+
+.custName {
+  text-transform: capitalize;
+}
+
+.custReview::first-letter {
+  text-transform: capitalize;
+}
+
+#callToAction {
+  background-color: #2b1e4d;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#callToAction h1 {
+  color: #e2e2e2;
+  font-size: 60px;
+  padding: 10px;
+  text-align: center;
+  text-shadow: 2px 2px #2b1e4d;
+}
+
+form {
+  max-width: 420px;
+  margin: 20px auto 0;
+}
+
+.feedback-input {
+  color: #2b1e4d;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: #e2e2e2;
+  border: 2px solid #c1666b;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+#trigger {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: #c1666b;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: #e2e2e2;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+#trigger:hover {
+  background: #cc4949;
+}
+
+footer {
+  text-align: center;
+  border-top: 5px solid #c1666b;
+  background-color: #2b1e4d;
+  color: #e2e2e2;
+  padding: 15px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+footer p {
+  padding-left: 0px;
+}
+
+#socialLinks {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+}
+
+#socialLinks li > a {
+  color: #e2e2e2;
+  padding: 0 5px;
+  font-size: 30px;
+}
+
+@media (min-width: 767px) {
+  #heroText {
+    padding: 0 10px;
+    font-size: 35px;
+  }
+  #aboutMeWrapper {
+    margin: 50px auto 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  #quoteBanner {
+    margin: 20px 0 100px;
+    height: 200px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    width: 70%;
+    height: 500px;
+    background-color: whitesmoke;
+    border: 5px solid #c1666b;
+    margin: 20px;
+  }
+
+  .testimonialCard {
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+
+@media (min-width: 991px) {
+  #sidebar {
+    height: 70px;
+  }
+
+  .fa-bars {
+    position: relative;
+    left: 50px;
+    overflow: hidden;
+  }
+
+  #navLinks {
+    position: relative;
+    top: -45px;
+    z-index: 1;
+  }
+
+  #sidebarLogo {
+    z-index: 997;
+  }
+
+  #heroText {
+    padding: 0 10px;
+    font-size: 35px;
+  }
+  #aboutMeWrapper {
+    margin: 50px auto 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+  }
+
+  #aboutMeContent p {
+    font-size: 20px;
+  }
+
+  #cardWrapper {
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .card {
+    height: 500px;
+    width: 40%;
+  }
+
+  .testimonialCard {
+    width: 70%;
+  }
+
+  #callToAction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #callToAction h1 {
+    width: 40%;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5px 20px 50px;
+  }
+
+  footer p {
+    margin: 0 auto;
+  }
+
+  #socialLinks {
+    margin: 0;
+  }
+
+  #socialLinks li > a {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1199px) {
+  #heroText h1 {
+    margin: 0 auto;
+    width: 70%;
+    padding: 40px;
+    font-size: 80px;
+  }
+
+  #quoteBanner {
+    font-size: 30px;
+  }
+
+  #cardWrapper {
+    width: 70%;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .testimonialCard {
+    width: 60%;
+  }
+
+  #callToAction {
+    width: 100%;
+  }
+
+  #callToAction h1 {
+    width: 30%;
+    margin: 0 auto;
+  }
+}
