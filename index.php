@@ -14,7 +14,7 @@
         </div>
         <div id="aboutMeContent">
           <h1>About Me:</h1>
-          <p>
+          <p id="aboutMeParagraph">
             My name is Lauren Reaves and I'm a <span id="age"></span> year old
             Full Stack Web Developer based in central Alabama with one year experience with HTML5, CSS3, JavaScript, JQuery, PHP, MySQL, WordPress and APIs. I'm a hardworker
             who is very passionate about technology and web development. I love

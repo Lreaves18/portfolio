@@ -133,6 +133,11 @@ body {
   margin-left: 10px;
 }
 
+#aboutMeParagraph {
+  font-size: 20px;
+  line-height: 30px;
+}
+
 #aboutMeContent h1,
 #cardWrapper h1,
 #testimonialHeading h1 {
@@ -315,6 +320,10 @@ footer p {
 }
 
 @media (min-width: 767px) {
+  .animate__slideOutUp {
+    animation-play-state: paused;
+  }
+
   #heroText {
     padding: 0 10px;
     font-size: 35px;
@@ -364,6 +373,11 @@ footer p {
     position: relative;
     top: -45px;
     z-index: 1;
+  }
+
+  .animate__slideOutUp {
+    -webkit-animation-name: none;
+    animation-name: none;
   }
 
   #sidebarLogo {
