@@ -25,7 +25,7 @@
         <ul id="navLinks" class="animate__animated">
           <li><a href="./index.php">home</a></li>
           <li><a href="#aboutMeWrapper">about</a></li>
-          <li><a href="layout/projects.php">projects</a></li>
+          <li><a href="#cardTitle">projects</a></li>
           <li><a href="#callToAction">contact</a></li>
         </ul>
       </div>
